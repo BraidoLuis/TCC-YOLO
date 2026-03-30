@@ -1,0 +1,44 @@
+cat > .gitignore << 'EOF'
+# Ambiente virtual
+venv/
+venv_*/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.env
+
+# Modelos e arquivos grandes
+*.tflite
+*.pt
+*.pth
+*.onnx
+
+# Arquivos de mídia
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.jpg
+*.jpeg
+*.png
+*.gif
+
+# Diretórios de output
+output/
+inference_results/
+logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Arquivos específicos do projeto
+vid.txt
+EOF
